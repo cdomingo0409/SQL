@@ -72,3 +72,12 @@ AND length(orderID) = 6
 AND orderID <> 'Order ID'
 ;
 
+
+#8 List all the products sold in Los Angeles in February, and include how many of each were sold.
+-- Using LIKE and % to get data in a specific location
+SELECT Product, SUM(quantity)
+FROM BIT_DB.FebSales
+WHERE location LIKE '%Los Angeles%'
+Group By Product
+;
+
