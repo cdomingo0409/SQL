@@ -1,0 +1,58 @@
+# A new project using Spotify Data downloaded from Kaggle
+# I created a table in the database for the date downloaded
+# Created queries to get some information from the database
+
+
+#Table Creation
+
+CREATE TABLE BIT_DB.Spotifydata (
+id integer PRIMARY KEY,
+artist_name varchar NOT NULL,
+track_name varchar NOT NULL,
+track_id varchar NOT NULL,
+popularity integer NOT NULL,
+danceability decimal(4,3) NOT NULL,
+energy decimal(4,3) NOT NULL,
+key integer NOT NULL,
+loudness decimal(5,3) NOT NULL,
+mode integer NOT NULL,
+speechiness decimal(5,4) NOT NULL,
+acousticness decimal(6,5) NOT NULL,
+instrumentalness text NOT NULL,
+liveness decimal(5,4) NOT NULL,
+valence decimal(4,3) NOT NULL,
+tempo decimal(6,3) NOT NULL,
+duration_ms integer NOT NULL,
+time_signature integer NOT NULL 
+)
+
+
+# Inserted the Spotify CSV 
+# Explored the table
+
+-- check the columns in the table
+SELECT *
+FROM BIT_DB.Spotifydata
+;
+
+
+-- list artist based popularity
+SELECT artist_name, popularity
+FROM BIT_DB.Spotifydata
+GROUP BY artist_name
+ORDER BY popularity DESC
+;
+
+-- list the amount of tracks per artist, desc
+SELECT artist_name, count(track_name) AS total_track
+FROM BIT_DB.Spotifydata
+GROUP BY artist_name
+ORDER BY total_track DESC
+;
+
+
+-- Look for artist with other artist featured in their track
+SELECT artist_name, track_name
+FROM BIT_DB.Spotifydata
+WHERE track_name LIKE '%feat%'
+;
