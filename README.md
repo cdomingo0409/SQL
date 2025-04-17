@@ -31,7 +31,7 @@ Analyzed sales data to identify trends and provide actionable insights for busin
 - Created views to simplify complex queries for reporting purposes.
 
 **Tools Used:**
-- MySQL
+- PostgreSQL
 - SQL
 
 ## 📚 Learning and Practice
