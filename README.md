@@ -6,7 +6,7 @@
 This collection showcases my proficiency in SQL through various projects, including database design, data manipulation, and complex queries.
 
 
-## 🛒 Electronics Store Database
+## 🛒 Electronics Store Analysis Project
 
 **Overview:**
 Designed a normalized relational database for a fictional electronics store, focusing on efficient data storage and retrieval.
@@ -20,7 +20,7 @@ Designed a normalized relational database for a fictional electronics store, foc
 - PostgreSQL
 - SQL
 
-## 📈 Sales Analysis Project
+## 📈 Superstore Analysis Project
 
 **Overview:**
 Analyzed sales data to identify trends and provide actionable insights for business decisions.
