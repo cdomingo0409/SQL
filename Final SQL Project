@@ -1,3 +1,17 @@
+
+### Overview
+Designed a relational database for a fictional electronics retailer and performed analytical queries to generate business insights.
+
+### Features
+- Normalized schema with product, customer, and sales tables
+- SQL queries to extract product performance, sales by region, and inventory analysis
+
+### Tools Used
+- PostgreSQL
+- SQLite
+- GitHub for version control
+
+
 -- Final SQL Project--
 -- Chinook database was used to get the information from the queries below--
 
