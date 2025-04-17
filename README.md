@@ -3,7 +3,7 @@
 
 **Welcome to my SQL Portfolio!**
 
-Welcome to my SQL project repository! This collection showcases my proficiency in SQL through various projects, including database design, data manipulation, and complex queries.
+This collection showcases my proficiency in SQL through various projects, including database design, data manipulation, and complex queries.
 
 
 ## 🛒 Electronics Store Database
